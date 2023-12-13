@@ -1,9 +1,8 @@
 import cv2 as cv
 import numpy as np 
 import datetime as dt 
-import math 
 
-cap = cv.VideoCapture('videos/empty.mp4')
+cap = cv.VideoCapture('videos/1.mp4')
 # ret = cap.set(3, 720) # set frame width
 # ret = cap.set(4, 1280) # set frame height
 kernel = np.ones((5, 5), np.uint8)
@@ -44,7 +43,8 @@ if cap.isOpened() is True:
                     x0 = i[0]
                     y0 = i[1]
             # print(x0, y0)
-
+            Ymax1 = frame.shape[0]
+            Ymax2 = frame.shape[0]
             for i in circles[0, :]:
                 if i[0] != x0 and i[1] != y0:
                     if x0 <= i[0] and Ymax1 > (int(y0) - int(i[1])):
@@ -55,8 +55,10 @@ if cap.isOpened() is True:
                         # cv.line(frame, (x0, y0), (i[0], i[1]), (255, 0, 0), 2)
                         Ymax2 = int(y0) - int(i[1])
                         Ym2.append(int(Ymax2))
-            print(max(Ym1), max(Ym2))
+            print('Начальная высота: ', max(Ym1), ' / ','Высота поднятия: ', max(Ym2))
+
         cv.imshow('Koper video', frame)
+        cv.imshow('Edges', edges)
 
         cv.waitKey(100)
 
