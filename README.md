@@ -24,7 +24,7 @@
 
 ![processing2_image](https://github.com/gitzense/koper/assets/114235388/a7036d82-3efe-4b96-ab0f-1f026ee6aa30)
 
-![terminal_image](https://github.com/gitzense/koper/assets/114235388/be2792f7-44c1-44f3-8284-3a30f06d97fd)
+![terminal_1_image](https://github.com/gitzense/koper/assets/114235388/2cfa554d-ec3b-4e07-a355-4316f1bbf1be)
 
 ## Обработка видео
 
