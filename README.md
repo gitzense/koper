@@ -34,6 +34,6 @@ https://github.com/gitzense/koper/assets/114235388/8c3a5e0a-65a6-4f20-84ed-d2bf6
 
 ![terminal_1_video](https://github.com/gitzense/koper/assets/114235388/845b9620-54b5-4e80-8105-c4120c4b0dd9)
 
-
+ага
 
 
